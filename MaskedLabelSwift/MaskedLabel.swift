@@ -24,9 +24,9 @@ class MaskedLabel: UILabel {
 
     func customInit() {
         maskColor = self.backgroundColor
-        super.textColor = UIColor.whiteColor()
+        self.textColor = UIColor.whiteColor()
         backgroundColor = UIColor.clearColor()
-        super.opaque = false
+        self.opaque = false
     }
 
     override func drawRect(rect: CGRect) {
@@ -37,13 +37,12 @@ class MaskedLabel: UILabel {
         CGContextConcatCTM(context, CGAffineTransformMake(1, 0, 0, -1, 0, CGRectGetHeight(rect)))
 
         let image: CGImageRef = CGBitmapContextCreateImage(context)!
-
         let mask: CGImageRef = CGImageMaskCreate(CGImageGetWidth(image), CGImageGetHeight(image), CGImageGetBitsPerComponent(image), CGImageGetBitsPerPixel(image), CGImageGetBytesPerRow(image), CGImageGetDataProvider(image), CGImageGetDecode(image), CGImageGetShouldInterpolate(image))!
 
-        CGContextClearRect(context, rect);
+        CGContextClearRect(context, rect)
         
-        CGContextSaveGState(context);
-        CGContextClipToMask(context, rect, mask);
+        CGContextSaveGState(context)
+        CGContextClipToMask(context, rect, mask)
         
         if (self.layer.cornerRadius != 0.0) {
             CGContextAddPath(context, CGPathCreateWithRoundedRect(rect, self.layer.cornerRadius, self.layer.cornerRadius, nil))

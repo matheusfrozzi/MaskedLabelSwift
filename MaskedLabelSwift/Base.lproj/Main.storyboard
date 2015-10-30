@@ -66,14 +66,12 @@
                             <constraint firstItem="6S7-dE-xTt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="QYN-Gu-Av0"/>
                             <constraint firstItem="B6T-or-MdP" firstAttribute="centerY" secondItem="5ZH-TV-WEq" secondAttribute="centerY" id="TP8-jT-BjM"/>
                             <constraint firstAttribute="trailing" secondItem="4LB-5m-2Rk" secondAttribute="trailing" constant="32" id="oMf-TW-l3a"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dE-xTt" secondAttribute="bottom" id="r5B-pL-bGC"/>
                             <constraint firstItem="6S7-dE-xTt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vZ8-K5-nkH"/>
                             <constraint firstItem="4LB-5m-2Rk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="xvG-I4-2YB"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="KCT-cF-2os"/>
-                                <exclude reference="r5B-pL-bGC"/>
                             </mask>
                         </variation>
                     </view>
