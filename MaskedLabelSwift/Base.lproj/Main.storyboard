@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUSTOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LB-5m-2Rk" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MASKED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LB-5m-2Rk" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
                                 <rect key="frame" x="32" y="36" width="536" height="58"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,8 +30,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C U S T O M" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-TV-WEq" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
-                                <rect key="frame" x="275" y="136" width="50" height="330"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M A S K E D" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-TV-WEq" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
+                                <rect key="frame" x="225" y="136" width="50" height="330"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.41568627450000001" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -41,17 +41,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M A S K E D" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6T-or-MdP" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
+                                <rect key="frame" x="325" y="136" width="50" height="330"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OxG-dg-ojR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="B6T-or-MdP" firstAttribute="leading" secondItem="5ZH-TV-WEq" secondAttribute="trailing" constant="50" id="5HE-dq-Qj5"/>
                             <constraint firstItem="5ZH-TV-WEq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CI7-oD-iD8"/>
-                            <constraint firstItem="5ZH-TV-WEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crp-m6-uXq"/>
+                            <constraint firstItem="5ZH-TV-WEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="Crp-m6-uXq"/>
                             <constraint firstAttribute="trailing" secondItem="6S7-dE-xTt" secondAttribute="trailing" id="FTJ-2O-JgU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dE-xTt" secondAttribute="bottom" id="IjR-cf-eAT"/>
                             <constraint firstItem="6S7-dE-xTt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KCT-cF-2os"/>
                             <constraint firstItem="4LB-5m-2Rk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="OHt-La-Ipp"/>
                             <constraint firstItem="6S7-dE-xTt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="QYN-Gu-Av0"/>
+                            <constraint firstItem="B6T-or-MdP" firstAttribute="centerY" secondItem="5ZH-TV-WEq" secondAttribute="centerY" id="TP8-jT-BjM"/>
                             <constraint firstAttribute="trailing" secondItem="4LB-5m-2Rk" secondAttribute="trailing" constant="32" id="oMf-TW-l3a"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dE-xTt" secondAttribute="bottom" id="r5B-pL-bGC"/>
                             <constraint firstItem="6S7-dE-xTt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vZ8-K5-nkH"/>
