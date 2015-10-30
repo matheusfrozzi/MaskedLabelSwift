@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-dE-xTt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUSTOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LB-5m-2Rk" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
+                                <rect key="frame" x="32" y="36" width="536" height="58"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C U S T O M" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-TV-WEq" customClass="MaskedLabel" customModule="MaskedLabelSwift" customModuleProvider="target">
+                                <rect key="frame" x="275" y="136" width="50" height="330"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.41568627450000001" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="nm3-ca-UkU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ZH-TV-WEq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CI7-oD-iD8"/>
+                            <constraint firstItem="5ZH-TV-WEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crp-m6-uXq"/>
+                            <constraint firstAttribute="trailing" secondItem="6S7-dE-xTt" secondAttribute="trailing" id="FTJ-2O-JgU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dE-xTt" secondAttribute="bottom" id="IjR-cf-eAT"/>
+                            <constraint firstItem="6S7-dE-xTt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KCT-cF-2os"/>
+                            <constraint firstItem="4LB-5m-2Rk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="OHt-La-Ipp"/>
+                            <constraint firstItem="6S7-dE-xTt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="QYN-Gu-Av0"/>
+                            <constraint firstAttribute="trailing" secondItem="4LB-5m-2Rk" secondAttribute="trailing" constant="32" id="oMf-TW-l3a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6S7-dE-xTt" secondAttribute="bottom" id="r5B-pL-bGC"/>
+                            <constraint firstItem="6S7-dE-xTt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vZ8-K5-nkH"/>
+                            <constraint firstItem="4LB-5m-2Rk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="xvG-I4-2YB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KCT-cF-2os"/>
+                                <exclude reference="r5B-pL-bGC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="659"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="744" height="1392"/>
+    </resources>
+</document>
